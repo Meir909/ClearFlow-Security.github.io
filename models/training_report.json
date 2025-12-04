@@ -1,0 +1,41 @@
+{
+  "training_timestamp": "2025-12-03T13:55:19.625150",
+  "dataset_path": "data/transactions.csv",
+  "performance_metrics": {
+    "accuracy": 0.94948,
+    "precision": 0.0088,
+    "recall": 0.3142857142857143,
+    "f1_score": 0.017120622568093387,
+    "roc_auc": 0.5573480014877972,
+    "pr_auc": 0.024877080539139427,
+    "false_positive_rate": 0.0496294812737833,
+    "false_discovery_rate": 0.9912,
+    "matthews_correlation_coefficient": 0.04540410512727595,
+    "balanced_accuracy": 0.6323281165059655,
+    "fowlkes_mallows_index": 0.05259005881071332,
+    "true_positives": 22,
+    "false_positives": 2478,
+    "true_negatives": 47452,
+    "false_negatives": 48,
+    "recall_at_k": {
+      "recall@100": 0.04285714285714286,
+      "recall@200": 0.11428571428571428,
+      "recall@500": 0.22857142857142856,
+      "recall@1000": 0.2571428571428571
+    }
+  },
+  "model_contributions": {
+    "isolation_forest": {
+      "weight": 0.4,
+      "contribution_percentage": 57.14285714285715,
+      "anomaly_count": 107,
+      "mean_score": -0.9
+    },
+    "autoencoder": {
+      "weight": 0.3,
+      "contribution_percentage": 42.85714285714286,
+      "anomaly_count": 2500,
+      "mean_score": 12.487244606018066
+    }
+  }
+}
